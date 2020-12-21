@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C140908425903D6A00FD249D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908325903D6A00FD249D /* AppDelegate.swift */; };
+		C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908525903D6A00FD249D /* SceneDelegate.swift */; };
+		C140908825903D6A00FD249D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908725903D6A00FD249D /* ViewController.swift */; };
+		C140908B25903D6A00FD249D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C140908925903D6A00FD249D /* Main.storyboard */; };
+		C140908D25903D6B00FD249D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C140908C25903D6B00FD249D /* Assets.xcassets */; };
+		C140909025903D6B00FD249D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C140908E25903D6B00FD249D /* LaunchScreen.storyboard */; };
+		C140909B25903D6B00FD249D /* HiNoteProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */; };
+		C14090A625903D6B00FD249D /* HiNoteProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14090A525903D6B00FD249D /* HiNoteProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C140909725903D6B00FD249D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C140907825903D6A00FD249D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C140907F25903D6A00FD249D;
+			remoteInfo = HiNoteProject;
+		};
+		C14090A225903D6B00FD249D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C140907825903D6A00FD249D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C140907F25903D6A00FD249D;
+			remoteInfo = HiNoteProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C140908025903D6A00FD249D /* HiNoteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiNoteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C140908325903D6A00FD249D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C140908525903D6A00FD249D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C140908725903D6A00FD249D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C140908A25903D6A00FD249D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C140908C25903D6B00FD249D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C140908F25903D6B00FD249D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C140909125903D6B00FD249D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C140909625903D6B00FD249D /* HiNoteProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiNoteProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNoteProjectTests.swift; sourceTree = "<group>"; };
+		C140909C25903D6B00FD249D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C14090A125903D6B00FD249D /* HiNoteProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiNoteProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14090A525903D6B00FD249D /* HiNoteProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNoteProjectUITests.swift; sourceTree = "<group>"; };
+		C14090A725903D6B00FD249D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C140907D25903D6A00FD249D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909325903D6B00FD249D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909E25903D6B00FD249D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C140907725903D6A00FD249D = {
+			isa = PBXGroup;
+			children = (
+				C140908225903D6A00FD249D /* HiNoteProject */,
+				C140909925903D6B00FD249D /* HiNoteProjectTests */,
+				C14090A425903D6B00FD249D /* HiNoteProjectUITests */,
+				C140908125903D6A00FD249D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C140908125903D6A00FD249D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C140908025903D6A00FD249D /* HiNoteProject.app */,
+				C140909625903D6B00FD249D /* HiNoteProjectTests.xctest */,
+				C14090A125903D6B00FD249D /* HiNoteProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C140908225903D6A00FD249D /* HiNoteProject */ = {
+			isa = PBXGroup;
+			children = (
+				C140908325903D6A00FD249D /* AppDelegate.swift */,
+				C140908525903D6A00FD249D /* SceneDelegate.swift */,
+				C140908725903D6A00FD249D /* ViewController.swift */,
+				C140908925903D6A00FD249D /* Main.storyboard */,
+				C140908C25903D6B00FD249D /* Assets.xcassets */,
+				C140908E25903D6B00FD249D /* LaunchScreen.storyboard */,
+				C140909125903D6B00FD249D /* Info.plist */,
+			);
+			path = HiNoteProject;
+			sourceTree = "<group>";
+		};
+		C140909925903D6B00FD249D /* HiNoteProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */,
+				C140909C25903D6B00FD249D /* Info.plist */,
+			);
+			path = HiNoteProjectTests;
+			sourceTree = "<group>";
+		};
+		C14090A425903D6B00FD249D /* HiNoteProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C14090A525903D6B00FD249D /* HiNoteProjectUITests.swift */,
+				C14090A725903D6B00FD249D /* Info.plist */,
+			);
+			path = HiNoteProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C140907F25903D6A00FD249D /* HiNoteProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14090AA25903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProject" */;
+			buildPhases = (
+				C140907C25903D6A00FD249D /* Sources */,
+				C140907D25903D6A00FD249D /* Frameworks */,
+				C140907E25903D6A00FD249D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiNoteProject;
+			productName = HiNoteProject;
+			productReference = C140908025903D6A00FD249D /* HiNoteProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C140909525903D6B00FD249D /* HiNoteProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14090AD25903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProjectTests" */;
+			buildPhases = (
+				C140909225903D6B00FD249D /* Sources */,
+				C140909325903D6B00FD249D /* Frameworks */,
+				C140909425903D6B00FD249D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C140909825903D6B00FD249D /* PBXTargetDependency */,
+			);
+			name = HiNoteProjectTests;
+			productName = HiNoteProjectTests;
+			productReference = C140909625903D6B00FD249D /* HiNoteProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C14090A025903D6B00FD249D /* HiNoteProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14090B025903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProjectUITests" */;
+			buildPhases = (
+				C140909D25903D6B00FD249D /* Sources */,
+				C140909E25903D6B00FD249D /* Frameworks */,
+				C140909F25903D6B00FD249D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14090A325903D6B00FD249D /* PBXTargetDependency */,
+			);
+			name = HiNoteProjectUITests;
+			productName = HiNoteProjectUITests;
+			productReference = C14090A125903D6B00FD249D /* HiNoteProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C140907825903D6A00FD249D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C140907F25903D6A00FD249D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C140909525903D6B00FD249D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C140907F25903D6A00FD249D;
+					};
+					C14090A025903D6B00FD249D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C140907F25903D6A00FD249D;
+					};
+				};
+			};
+			buildConfigurationList = C140907B25903D6A00FD249D /* Build configuration list for PBXProject "HiNoteProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C140907725903D6A00FD249D;
+			productRefGroup = C140908125903D6A00FD249D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C140907F25903D6A00FD249D /* HiNoteProject */,
+				C140909525903D6B00FD249D /* HiNoteProjectTests */,
+				C14090A025903D6B00FD249D /* HiNoteProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C140907E25903D6A00FD249D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C140909025903D6B00FD249D /* LaunchScreen.storyboard in Resources */,
+				C140908D25903D6B00FD249D /* Assets.xcassets in Resources */,
+				C140908B25903D6A00FD249D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909425903D6B00FD249D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909F25903D6B00FD249D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C140907C25903D6A00FD249D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C140908825903D6A00FD249D /* ViewController.swift in Sources */,
+				C140908425903D6A00FD249D /* AppDelegate.swift in Sources */,
+				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909225903D6B00FD249D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C140909B25903D6B00FD249D /* HiNoteProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C140909D25903D6B00FD249D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14090A625903D6B00FD249D /* HiNoteProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C140909825903D6B00FD249D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C140907F25903D6A00FD249D /* HiNoteProject */;
+			targetProxy = C140909725903D6B00FD249D /* PBXContainerItemProxy */;
+		};
+		C14090A325903D6B00FD249D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C140907F25903D6A00FD249D /* HiNoteProject */;
+			targetProxy = C14090A225903D6B00FD249D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C140908925903D6A00FD249D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C140908A25903D6A00FD249D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C140908E25903D6B00FD249D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C140908F25903D6B00FD249D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C14090A825903D6B00FD249D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C14090A925903D6B00FD249D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C14090AB25903D6B00FD249D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C14090AC25903D6B00FD249D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C14090AE25903D6B00FD249D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiNoteProject.app/HiNoteProject";
+			};
+			name = Debug;
+		};
+		C14090AF25903D6B00FD249D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiNoteProject.app/HiNoteProject";
+			};
+			name = Release;
+		};
+		C14090B125903D6B00FD249D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiNoteProject;
+			};
+			name = Debug;
+		};
+		C14090B225903D6B00FD249D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5TSK3BW7F;
+				INFOPLIST_FILE = HiNoteProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiNoteProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C140907B25903D6A00FD249D /* Build configuration list for PBXProject "HiNoteProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14090A825903D6B00FD249D /* Debug */,
+				C14090A925903D6B00FD249D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14090AA25903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14090AB25903D6B00FD249D /* Debug */,
+				C14090AC25903D6B00FD249D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14090AD25903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14090AE25903D6B00FD249D /* Debug */,
+				C14090AF25903D6B00FD249D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14090B025903D6B00FD249D /* Build configuration list for PBXNativeTarget "HiNoteProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14090B125903D6B00FD249D /* Debug */,
+				C14090B225903D6B00FD249D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C140907825903D6A00FD249D /* Project object */;
+}
