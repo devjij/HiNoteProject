@@ -13,6 +13,7 @@
 		8744DD482590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
 		8744DD492590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
 		8744DD4A2590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
+		8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4B2590D7D300457EB7 /* MainViewController.swift */; };
 		C140908425903D6A00FD249D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908325903D6A00FD249D /* AppDelegate.swift */; };
 		C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908525903D6A00FD249D /* SceneDelegate.swift */; };
 		C140908825903D6A00FD249D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908725903D6A00FD249D /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		8744DD432590D23800457EB7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		8744DD472590D24A00457EB7 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		8744DD4B2590D7D300457EB7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C140908025903D6A00FD249D /* HiNoteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiNoteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C140908325903D6A00FD249D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C140908525903D6A00FD249D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		8744DD3E2590D1F700457EB7 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				C140908E25903D6B00FD249D /* LaunchScreen.storyboard */,
 				8744DD472590D24A00457EB7 /* LogIn.storyboard */,
 				C140908925903D6A00FD249D /* Main.storyboard */,
 				8744DD432590D23800457EB7 /* Settings.storyboard */,
@@ -120,9 +123,9 @@
 				C140908325903D6A00FD249D /* AppDelegate.swift */,
 				8744DD3E2590D1F700457EB7 /* StoryBoards */,
 				C140908525903D6A00FD249D /* SceneDelegate.swift */,
+				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
 				C140908725903D6A00FD249D /* ViewController.swift */,
 				C140908C25903D6B00FD249D /* Assets.xcassets */,
-				C140908E25903D6B00FD249D /* LaunchScreen.storyboard */,
 				C140909125903D6B00FD249D /* Info.plist */,
 			);
 			path = HiNoteProject;
@@ -285,6 +288,7 @@
 				C140908825903D6A00FD249D /* ViewController.swift in Sources */,
 				C140908425903D6A00FD249D /* AppDelegate.swift in Sources */,
 				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
+				8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
