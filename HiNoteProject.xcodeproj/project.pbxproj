@@ -10,13 +10,10 @@
 		8744DD442590D23800457EB7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD432590D23800457EB7 /* Settings.storyboard */; };
 		8744DD452590D23800457EB7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD432590D23800457EB7 /* Settings.storyboard */; };
 		8744DD462590D23800457EB7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD432590D23800457EB7 /* Settings.storyboard */; };
-		8744DD482590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
-		8744DD492590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
-		8744DD4A2590D24A00457EB7 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD472590D24A00457EB7 /* LogIn.storyboard */; };
 		8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4B2590D7D300457EB7 /* MainViewController.swift */; };
 		8744DD50259137BF00457EB7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4F259137BF00457EB7 /* PostViewController.swift */; };
-		8744DD51259137BF00457EB7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4F259137BF00457EB7 /* PostViewController.swift */; };
-		8744DD52259137BF00457EB7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4F259137BF00457EB7 /* PostViewController.swift */; };
+		C126313B259230AD0087660C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126313A259230AD0087660C /* SignUpViewController.swift */; };
+		C1263140259230C50087660C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126313F259230C50087660C /* LoginViewController.swift */; };
 		C140908425903D6A00FD249D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908325903D6A00FD249D /* AppDelegate.swift */; };
 		C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908525903D6A00FD249D /* SceneDelegate.swift */; };
 		C140908825903D6A00FD249D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908725903D6A00FD249D /* ViewController.swift */; };
@@ -46,9 +43,10 @@
 
 /* Begin PBXFileReference section */
 		8744DD432590D23800457EB7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		8744DD472590D24A00457EB7 /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		8744DD4B2590D7D300457EB7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8744DD4F259137BF00457EB7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		C126313A259230AD0087660C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C126313F259230C50087660C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C140908025903D6A00FD249D /* HiNoteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiNoteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C140908325903D6A00FD249D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C140908525903D6A00FD249D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,11 +92,22 @@
 			isa = PBXGroup;
 			children = (
 				C140908E25903D6B00FD249D /* LaunchScreen.storyboard */,
-				8744DD472590D24A00457EB7 /* LogIn.storyboard */,
 				C140908925903D6A00FD249D /* Main.storyboard */,
 				8744DD432590D23800457EB7 /* Settings.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C1263144259230D50087660C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C126313A259230AD0087660C /* SignUpViewController.swift */,
+				C126313F259230C50087660C /* LoginViewController.swift */,
+				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
+				8744DD4F259137BF00457EB7 /* PostViewController.swift */,
+				C140908725903D6A00FD249D /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		C140907725903D6A00FD249D = {
@@ -125,11 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				C140908325903D6A00FD249D /* AppDelegate.swift */,
-				8744DD3E2590D1F700457EB7 /* StoryBoards */,
 				C140908525903D6A00FD249D /* SceneDelegate.swift */,
-				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
-				8744DD4F259137BF00457EB7 /* PostViewController.swift */,
-				C140908725903D6A00FD249D /* ViewController.swift */,
+				8744DD3E2590D1F700457EB7 /* StoryBoards */,
+				C1263144259230D50087660C /* View Controllers */,
 				C140908C25903D6B00FD249D /* Assets.xcassets */,
 				C140909125903D6B00FD249D /* Info.plist */,
 			);
@@ -261,7 +268,6 @@
 				C140908D25903D6B00FD249D /* Assets.xcassets in Resources */,
 				C140908B25903D6A00FD249D /* Main.storyboard in Resources */,
 				8744DD442590D23800457EB7 /* Settings.storyboard in Resources */,
-				8744DD482590D24A00457EB7 /* LogIn.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8744DD492590D24A00457EB7 /* LogIn.storyboard in Resources */,
 				8744DD452590D23800457EB7 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8744DD4A2590D24A00457EB7 /* LogIn.storyboard in Resources */,
 				8744DD462590D23800457EB7 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1263140259230C50087660C /* LoginViewController.swift in Sources */,
+				C126313B259230AD0087660C /* SignUpViewController.swift in Sources */,
 				C140908825903D6A00FD249D /* ViewController.swift in Sources */,
 				C140908425903D6A00FD249D /* AppDelegate.swift in Sources */,
 				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
@@ -302,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8744DD51259137BF00457EB7 /* PostViewController.swift in Sources */,
 				C140909B25903D6B00FD249D /* HiNoteProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8744DD52259137BF00457EB7 /* PostViewController.swift in Sources */,
 				C14090A625903D6B00FD249D /* HiNoteProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
