@@ -22,6 +22,13 @@
 		C140909025903D6B00FD249D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C140908E25903D6B00FD249D /* LaunchScreen.storyboard */; };
 		C140909B25903D6B00FD249D /* HiNoteProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */; };
 		C14090A625903D6B00FD249D /* HiNoteProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14090A525903D6B00FD249D /* HiNoteProjectUITests.swift */; };
+		C1C0AF7A259A268D00ADE1CD /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = C1C0AF79259A268D00ADE1CD /* landmarkData.json */; };
+		C1C0AF7F259A26BA00ADE1CD /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AF7E259A26BA00ADE1CD /* Landmark.swift */; };
+		C1C0AF84259A272100ADE1CD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AF83259A272100ADE1CD /* ModelData.swift */; };
+		C1C0AF9C259A2AA000ADE1CD /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AF9B259A2AA000ADE1CD /* LandmarkRow.swift */; };
+		C1C0AFBD259A2E9800ADE1CD /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFBC259A2E9800ADE1CD /* SongList.swift */; };
+		C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */; };
+		C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC6259A328200ADE1CD /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +68,13 @@
 		C14090A125903D6B00FD249D /* HiNoteProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiNoteProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14090A525903D6B00FD249D /* HiNoteProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiNoteProjectUITests.swift; sourceTree = "<group>"; };
 		C14090A725903D6B00FD249D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C0AF79259A268D00ADE1CD /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		C1C0AF7E259A26BA00ADE1CD /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		C1C0AF83259A272100ADE1CD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		C1C0AF9B259A2AA000ADE1CD /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		C1C0AFBC259A2E9800ADE1CD /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
+		C1C0AFC6259A328200ADE1CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8744DD3E2590D1F700457EB7 /* StoryBoards */ = {
+		8744DD3E2590D1F700457EB7 /* UI Views */ = {
 			isa = PBXGroup;
 			children = (
 				C140908E25903D6B00FD249D /* LaunchScreen.storyboard */,
 				C140908925903D6A00FD249D /* Main.storyboard */,
 				8744DD432590D23800457EB7 /* Settings.storyboard */,
 			);
-			path = StoryBoards;
+			path = "UI Views";
 			sourceTree = "<group>";
 		};
 		C1263144259230D50087660C /* View Controllers */ = {
@@ -133,9 +147,16 @@
 		C140908225903D6A00FD249D /* HiNoteProject */ = {
 			isa = PBXGroup;
 			children = (
+				C1C0AF79259A268D00ADE1CD /* landmarkData.json */,
+				C1C0AF83259A272100ADE1CD /* ModelData.swift */,
 				C140908325903D6A00FD249D /* AppDelegate.swift */,
 				C140908525903D6A00FD249D /* SceneDelegate.swift */,
-				8744DD3E2590D1F700457EB7 /* StoryBoards */,
+				C1C0AF7E259A26BA00ADE1CD /* Landmark.swift */,
+				C1C0AF9B259A2AA000ADE1CD /* LandmarkRow.swift */,
+				C1C0AFBC259A2E9800ADE1CD /* SongList.swift */,
+				C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */,
+				C1C0AFC6259A328200ADE1CD /* ContentView.swift */,
+				8744DD3E2590D1F700457EB7 /* UI Views */,
 				C1263144259230D50087660C /* View Controllers */,
 				C140908C25903D6B00FD249D /* Assets.xcassets */,
 				C140909125903D6B00FD249D /* Info.plist */,
@@ -267,6 +288,7 @@
 				C140909025903D6B00FD249D /* LaunchScreen.storyboard in Resources */,
 				C140908D25903D6B00FD249D /* Assets.xcassets in Resources */,
 				C140908B25903D6A00FD249D /* Main.storyboard in Resources */,
+				C1C0AF7A259A268D00ADE1CD /* landmarkData.json in Resources */,
 				8744DD442590D23800457EB7 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,11 +317,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1263140259230C50087660C /* LoginViewController.swift in Sources */,
+				C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */,
 				C126313B259230AD0087660C /* SignUpViewController.swift in Sources */,
+				C1C0AF84259A272100ADE1CD /* ModelData.swift in Sources */,
 				C140908825903D6A00FD249D /* ViewController.swift in Sources */,
+				C1C0AF7F259A26BA00ADE1CD /* Landmark.swift in Sources */,
 				C140908425903D6A00FD249D /* AppDelegate.swift in Sources */,
+				C1C0AFBD259A2E9800ADE1CD /* SongList.swift in Sources */,
 				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
 				8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */,
+				C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */,
+				C1C0AF9C259A2AA000ADE1CD /* LandmarkRow.swift in Sources */,
 				8744DD50259137BF00457EB7 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
