@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct SongList: View {
+    @State private var showFavoritesOnly = false
+    
+    var filteredLandmarks: [Landmark]{
+        landmarks.filter {
+            landmark in (!showFavoritesOnly || landmark.isFavorite)
+        }
+    }
+    
+    
+    
     var body: some View {
         NavigationView {
             if #available(iOS 14.0, *) {
-                List(landmarks) { landmark in
+                List(filteredLandmarks) { landmark in
                     NavigationLink(destination: SongDetail(landmark: landmark)){
                     LandmarkRow(landmark: landmark)
                     }
