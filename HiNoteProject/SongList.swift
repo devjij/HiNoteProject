@@ -12,7 +12,7 @@ struct SongList: View {
         NavigationView {
             if #available(iOS 14.0, *) {
                 List(landmarks) { landmark in
-                    NavigationLink(destination: SongDetail()){
+                    NavigationLink(destination: SongDetail(landmark: landmark)){
                     LandmarkRow(landmark: landmark)
                     }
                 }

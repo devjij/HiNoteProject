@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct SongDetail: View {
+    var landmark: Landmark
+    
     var body: some View {
-        VStack {
-                    Spacer()
+        ScrollView {
 
                     VStack(alignment: .leading) {
-                        Text("Title")
+                        Text(landmark.name)
                             .font(.title)
                             .foregroundColor(.primary)
 
                         HStack {
-                            Text("Artist")
+                            Text(landmark.park)
+                                .foregroundColor(.blue)
                             Spacer()
-                            Text("Album")
+                            Text(landmark.state)
+                                .foregroundColor(.blue)
                         }
                         .font(.subheadline)
                         .foregroundColor(.secondary)
@@ -28,22 +31,32 @@ struct SongDetail: View {
                         Divider()
 
                         if #available(iOS 14.0, *) {
-                            Text("Review Score (?/10)")
+                            Text("Score: \(landmark.city)/10")
                                 .font(.title2)
                         } else {
                             // Fallback on earlier versions
                         }
-                        Text("Review Text")
+                        if #available(iOS 14.0, *) {
+                            Text("Review")
+                                .font(.title2)
+                                .foregroundColor(.green)
+                        } else {
+                            // Fallback on earlier versions
+                        }
+                        Text(landmark.description)
                     }
                     .padding()
 
-                    Spacer()
+                    
         }
     }
 }
 
 struct SongDetail_Previews: PreviewProvider {
     static var previews: some View {
-        SongDetail()
+        Group {
+            SongDetail(landmark: landmarks[0])
+            SongDetail(landmark: landmarks[0])
+        }
     }
 }
