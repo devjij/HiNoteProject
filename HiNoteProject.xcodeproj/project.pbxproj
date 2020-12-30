@@ -12,6 +12,7 @@
 		8744DD462590D23800457EB7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8744DD432590D23800457EB7 /* Settings.storyboard */; };
 		8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4B2590D7D300457EB7 /* MainViewController.swift */; };
 		8744DD50259137BF00457EB7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8744DD4F259137BF00457EB7 /* PostViewController.swift */; };
+		C1068219259C0A6A00661D9D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1068218259C0A6A00661D9D /* FavoriteButton.swift */; };
 		C126313B259230AD0087660C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126313A259230AD0087660C /* SignUpViewController.swift */; };
 		C1263140259230C50087660C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C126313F259230C50087660C /* LoginViewController.swift */; };
 		C140908425903D6A00FD249D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140908325903D6A00FD249D /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		8744DD432590D23800457EB7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		8744DD4B2590D7D300457EB7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8744DD4F259137BF00457EB7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		C1068218259C0A6A00661D9D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		C126313A259230AD0087660C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C126313F259230C50087660C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C140908025903D6A00FD249D /* HiNoteProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiNoteProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 				C1C0AFBC259A2E9800ADE1CD /* SongList.swift */,
 				C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */,
 				C1C0AFC6259A328200ADE1CD /* ContentView.swift */,
+				C1068218259C0A6A00661D9D /* FavoriteButton.swift */,
 				8744DD3E2590D1F700457EB7 /* UI Views */,
 				C1263144259230D50087660C /* View Controllers */,
 				C140908C25903D6B00FD249D /* Assets.xcassets */,
@@ -327,6 +330,7 @@
 				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
 				8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */,
 				C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */,
+				C1068219259C0A6A00661D9D /* FavoriteButton.swift in Sources */,
 				C1C0AF9C259A2AA000ADE1CD /* LandmarkRow.swift in Sources */,
 				8744DD50259137BF00457EB7 /* PostViewController.swift in Sources */,
 			);

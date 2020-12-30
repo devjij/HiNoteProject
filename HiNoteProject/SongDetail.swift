@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct SongDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+    
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id})!
+    }
+    
     
     var body: some View {
         ScrollView {
 
                     VStack(alignment: .leading) {
+                        HStack{
                         Text(landmark.name)
                             .font(.title)
                             .foregroundColor(.primary)
-
+                            FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                        }
                         HStack {
                             Text(landmark.park)
                                 .foregroundColor(.blue)
@@ -54,9 +62,6 @@ struct SongDetail: View {
 
 struct SongDetail_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            SongDetail(landmark: landmarks[0])
-            SongDetail(landmark: landmarks[0])
-        }
+        SongDetail(landmark: ModelData().landmarks[0])
     }
 }

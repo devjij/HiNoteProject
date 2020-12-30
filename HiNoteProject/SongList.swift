@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SongList: View {
+    @EnvironmentObject var modelData: ModelData
     @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark]{
-        landmarks.filter {
+        modelData.landmarks.filter {
             landmark in (!showFavoritesOnly || landmark.isFavorite)
         }
     }
@@ -21,10 +22,17 @@ struct SongList: View {
     var body: some View {
         NavigationView {
             if #available(iOS 14.0, *) {
-                List(filteredLandmarks) { landmark in
+                List {
+                    Toggle(isOn: $showFavoritesOnly){
+                        Text("Favorites only")
+                    }
+                    
+                    
+                    ForEach(filteredLandmarks) { landmark in
                     NavigationLink(destination: SongDetail(landmark: landmark)){
                     LandmarkRow(landmark: landmark)
                     }
+                }
                 }
                 .navigationTitle("Songs")
             } else {
@@ -35,7 +43,9 @@ struct SongList: View {
 }
 
 struct SongList_Previews: PreviewProvider {
+    
     static var previews: some View {
         SongList()
+            .environmentObject(ModelData())
     }
 }
