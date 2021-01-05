@@ -16,30 +16,19 @@ class PostViewController: UIViewController {
     }
     
 
-    @IBAction func ReturntoHome(_ sender: Any) {
-        performSegue(withIdentifier: "returnHome", sender: self)
+    @IBAction func Cancel(_ sender: Any) {
     }
+    
     
     @IBAction func SongField(_ sender: Any) {
     }
     @IBAction func ArtistField(_ sender: Any) {
     }
-    @IBAction func AlbumField(_ sender: Any) {
+    @IBAction func AlbumFiled(_ sender: Any) {
+    }
+    @IBAction func GenreField(_ sender: Any) {
     }
     @IBAction func ReviewField(_ sender: Any) {
-    }
-    
-    @IBAction func StarOne(_ sender: Any) {
-    }
-    @IBAction func StarTwo(_ sender: Any) {
-    }
-    @IBAction func StarThree(_ sender: Any) {
-    }
-    @IBAction func StarFour(_ sender: Any) {
-    }
-    @IBAction func StarFive(_ sender: Any) {
-    }
-    @IBAction func StarSix(_ sender: Any) {
     }
     
     
