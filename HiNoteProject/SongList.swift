@@ -21,7 +21,10 @@ struct SongList: View {
     
     var body: some View {
         NavigationView {
-            if #available(iOS 14.0, *) {
+            VStack() {
+                
+            Text("Songs")
+                .font(.system(size: 35))
                 List {
                     Toggle(isOn: $showFavoritesOnly){
                         Text("Favorites only")
@@ -34,11 +37,7 @@ struct SongList: View {
                     }
                 }
                 }
-                .navigationTitle("Songs")
-            } else {
-                // Fallback on earlier versions
             }
-        }
     }
 }
 
@@ -48,4 +47,5 @@ struct SongList_Previews: PreviewProvider {
         SongList()
             .environmentObject(ModelData())
     }
+}
 }

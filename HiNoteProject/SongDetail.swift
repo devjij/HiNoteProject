@@ -38,19 +38,13 @@ struct SongDetail: View {
 
                         Divider()
 
-                        if #available(iOS 14.0, *) {
                             Text("Score: \(landmark.city)/10")
-                                .font(.title2)
-                        } else {
-                            // Fallback on earlier versions
-                        }
-                        if #available(iOS 14.0, *) {
+                                .font(.system(size: 20))
+ 
                             Text("Review")
-                                .font(.title2)
+                                .font(.system(size: 20))
                                 .foregroundColor(.green)
-                        } else {
-                            // Fallback on earlier versions
-                        }
+                        
                         Text(landmark.description)
                     }
                     .padding()
