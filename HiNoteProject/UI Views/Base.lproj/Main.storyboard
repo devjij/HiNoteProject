@@ -362,6 +362,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="StarTwo:" destination="RIE-B0-b7B" eventType="touchUpInside" id="TUs-Sy-odG"/>
+                                    <action selector="StarTwoFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="0o4-hY-IEn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWG-XT-WCr">
@@ -398,6 +399,13 @@
                     <navigationItem key="navigationItem" id="7FN-Ub-ieW"/>
                     <connections>
                         <outlet property="PostLabel" destination="PrG-4i-ZZJ" id="8ex-9I-4fq"/>
+                        <outlet property="StarFive" destination="Ggl-jZ-E8e" id="KLj-sT-rQo"/>
+                        <outlet property="StarFour" destination="Uh1-rK-cV4" id="F7h-21-z5t"/>
+                        <outlet property="StarONe" destination="85f-4z-WZC" id="sJ9-r4-IOG"/>
+                        <outlet property="StarOne" destination="ruc-Gv-we9" id="Uh1-SB-0ys"/>
+                        <outlet property="StarSix" destination="4bF-JA-AKn" id="epf-g9-mbv"/>
+                        <outlet property="StarThree" destination="OqN-8k-A2I" id="M1O-uQ-EhF"/>
+                        <outlet property="StarTwo" destination="85f-4z-WZC" id="b27-gd-vre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eox-fM-4jw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

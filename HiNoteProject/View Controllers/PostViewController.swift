@@ -31,18 +31,34 @@ class PostViewController: UIViewController {
     @IBAction func ReviewField(_ sender: Any) {
     }
     
-    @IBAction func StarOne(_ sender: Any) {
+
+    @IBOutlet weak var StarOne: UIButton!
+    
+    @IBOutlet weak var StarTwo: UIButton!
+    
+    @IBOutlet weak var StarThree: UIButton!
+    
+    @IBOutlet weak var StarFour: UIButton!
+    
+    @IBOutlet weak var StarFive: UIButton!
+    
+    @IBOutlet weak var StarSix: UIButton!
+    
+    @IBAction func StarOneFill(_ sender: Any) {
+        StarOne.backgroundImage
+        
     }
     
-    @IBAction func StarTwo(_ sender: Any) {
+    
+    @IBAction func StarTwoFill(_ sender: Any) {
     }
-    @IBAction func StarThree(_ sender: Any) {
+    @IBAction func StarThreeFill(_ sender: Any) {
     }
-    @IBAction func StarFour(_ sender: Any) {
+    @IBAction func StarFourFill(_ sender: Any) {
     }
-    @IBAction func StarFive(_ sender: Any) {
+    @IBAction func StarFiveFill(_ sender: Any) {
     }
-    @IBAction func StarSix(_ sender: Any) {
+    @IBAction func StarSixFill(_ sender: Any) {
     }
     
     @IBAction func PostButton(_ sender: Any) {
