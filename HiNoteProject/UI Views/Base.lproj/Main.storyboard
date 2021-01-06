@@ -320,37 +320,56 @@
                                 <rect key="frame" x="33" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="Star1:" destination="RIE-B0-b7B" eventType="touchUpInside" id="xVE-Qu-VKY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bF-JA-AKn">
                                 <rect key="frame" x="313" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="StarSix:" destination="RIE-B0-b7B" eventType="touchUpInside" id="F9z-Vz-z3R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggl-jZ-E8e">
                                 <rect key="frame" x="255" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="StarFive:" destination="RIE-B0-b7B" eventType="touchUpInside" id="UZx-Mr-klv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqN-8k-A2I">
                                 <rect key="frame" x="145" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="StarThree:" destination="RIE-B0-b7B" eventType="touchUpInside" id="YoN-6r-1ZY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh1-rK-cV4">
                                 <rect key="frame" x="200" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="StarFour:" destination="RIE-B0-b7B" eventType="touchUpInside" id="SJK-Ku-f5V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85f-4z-WZC">
                                 <rect key="frame" x="86" y="595" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="star" catalog="system"/>
+                                <connections>
+                                    <action selector="StarTwo:" destination="RIE-B0-b7B" eventType="touchUpInside" id="TUs-Sy-odG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWG-XT-WCr">
                                 <rect key="frame" x="146" y="663.5" width="122" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                 <connections>
+                                    <action selector="PostButton:" destination="RIE-B0-b7B" eventType="touchUpInside" id="Vrg-wI-JKE"/>
                                     <action selector="PostButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQy-Rw-jwZ"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="541-KF-wIb"/>
                                 </connections>
@@ -377,6 +396,9 @@
                         <viewLayoutGuide key="safeArea" id="pyA-al-wnd"/>
                     </view>
                     <navigationItem key="navigationItem" id="7FN-Ub-ieW"/>
+                    <connections>
+                        <outlet property="PostLabel" destination="PrG-4i-ZZJ" id="8ex-9I-4fq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eox-fM-4jw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
