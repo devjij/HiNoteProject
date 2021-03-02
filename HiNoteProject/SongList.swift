@@ -35,7 +35,9 @@ struct SongList: View {
                     NavigationLink(destination: SongDetail(landmark: landmark)){
                     LandmarkRow(landmark: landmark)
                     }
+
                 }
+                    AddSongButton(isSet: .constant(true))
                 }
             }
     }

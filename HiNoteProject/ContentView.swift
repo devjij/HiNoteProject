@@ -11,12 +11,17 @@ struct ContentView: View {
     var body: some View {
         
         SongList()
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(ModelData())
+        Group {
+            ContentView()
+                .environmentObject(ModelData())
+            ContentView()
+                .environmentObject(ModelData())
+        }
     }
 }
