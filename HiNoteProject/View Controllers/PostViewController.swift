@@ -45,7 +45,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var StarSix: UIButton!
     
     @IBAction func StarOneFill(_ sender: Any) {
-        StarOne.backgroundImage
+       // StarOne.backgroundImage
         
     }
     
