@@ -37,7 +37,12 @@ struct SongList: View {
                     }
 
                 }
+                    HStack(alignment: .top){
+                        Spacer()
+                                .frame(width: 160)
+                        
                     AddSongButton(isSet: .constant(true))
+                    }
                 }
             }
     }
