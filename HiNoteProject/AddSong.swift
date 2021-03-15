@@ -16,6 +16,9 @@ struct AddSongButton: View {
         }
     }
 }
+var ButtonVariable = 0
+
+
 
 struct AddSongButton_Previews: PreviewProvider {
     static var previews: some View {

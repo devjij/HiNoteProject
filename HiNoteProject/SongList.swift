@@ -25,6 +25,9 @@ struct SongList: View {
                 
             Text("Songs")
                 .font(.system(size: 35))
+            
+            Text("Button Tapped: \(ButtonVariable)")
+                .font(.system(size: 20))
                 List {
                     Toggle(isOn: $showFavoritesOnly){
                         Text("Favorites only")
