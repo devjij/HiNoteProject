@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UyH-Wg-mMe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UyH-Wg-mMe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,7 +33,7 @@
                                         <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="6c1-1N-s99" kind="show" id="955-UK-q70"/>
+                                            <segue destination="6c1-1N-s99" kind="show" destinationCreationSelector="LoginButton:" id="955-UK-q70"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -84,6 +84,10 @@
                                             <constraint firstAttribute="height" constant="40" id="wEy-3M-j12"/>
                                         </constraints>
                                         <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="LoginButton:" destination="6c1-1N-s99" eventType="touchUpInside" id="wZg-Sc-J1i"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" destinationCreationSelector="MoveToMainTemp:" id="CCj-NP-Vym"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD9-5I-PpC">
                                         <rect key="frame" x="0.0" y="213" width="300" height="20.5"/>
@@ -112,10 +116,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cms-bn-dVk"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="O9m-qb-q5z" id="Vcq-ln-Pub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNg-6n-5Cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92036" y="857"/>
+            <point key="canvasLocation" x="-92036" y="864"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="dr3-6G-nDC">
@@ -155,6 +162,9 @@
                                             <constraint firstAttribute="height" constant="40" id="9PJ-xq-0Bf"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="DzN-Kf-Cr5"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7a-pG-2IJ">
                                         <rect key="frame" x="0.0" y="351" width="300" height="20.5"/>
@@ -186,7 +196,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-Kx-fWx">
@@ -246,6 +256,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FlC-GL-zDF"/>
                     <connections>
                         <outlet property="PostView" destination="VIe-IV-cW9" id="yTZ-g3-3vt"/>
                         <outlet property="ProfilePicture" destination="10s-U6-JGi" id="gGz-wf-Cur"/>
@@ -270,7 +281,7 @@
             <objects>
                 <viewController id="RIE-B0-b7B" customClass="PostViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLl-Uf-b6N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Song" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-6K-V4z">
@@ -324,6 +335,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="Star1:" destination="RIE-B0-b7B" eventType="touchUpInside" id="xVE-Qu-VKY"/>
+                                    <action selector="StarOneFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="fum-kn-JlL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bF-JA-AKn">
@@ -332,6 +344,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="StarSix:" destination="RIE-B0-b7B" eventType="touchUpInside" id="F9z-Vz-z3R"/>
+                                    <action selector="StarSixFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="23N-fo-75d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggl-jZ-E8e">
@@ -340,6 +353,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="StarFive:" destination="RIE-B0-b7B" eventType="touchUpInside" id="UZx-Mr-klv"/>
+                                    <action selector="StarFiveFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="txK-dO-wD1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqN-8k-A2I">
@@ -348,6 +362,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="StarThree:" destination="RIE-B0-b7B" eventType="touchUpInside" id="YoN-6r-1ZY"/>
+                                    <action selector="StarThreeFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="Qfu-qz-giR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh1-rK-cV4">
@@ -356,6 +371,7 @@
                                 <state key="normal" backgroundImage="star" catalog="system"/>
                                 <connections>
                                     <action selector="StarFour:" destination="RIE-B0-b7B" eventType="touchUpInside" id="SJK-Ku-f5V"/>
+                                    <action selector="StarFourFill:" destination="RIE-B0-b7B" eventType="touchUpInside" id="nfM-GH-oJ2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85f-4z-WZC">
@@ -433,8 +449,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2tN-Vd-8ao"/>
-        <segue reference="541-KF-wIb"/>
+        <segue reference="CCj-NP-Vym"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
