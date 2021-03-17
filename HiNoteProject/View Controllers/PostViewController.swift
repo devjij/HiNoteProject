@@ -44,21 +44,26 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var StarSix: UIButton!
     
+    
+    
     @IBAction func StarOneFill(_ sender: Any) {
-       // StarOne.backgroundImage
-        
+        StarOne.backgroundColor = UIColor.blue
     }
-    
-    
     @IBAction func StarTwoFill(_ sender: Any) {
+        StarTwo.backgroundColor = UIColor.blue
     }
+
     @IBAction func StarThreeFill(_ sender: Any) {
+        StarThree.backgroundColor = UIColor.blue
     }
     @IBAction func StarFourFill(_ sender: Any) {
+        StarFour.backgroundColor = UIColor.blue
     }
     @IBAction func StarFiveFill(_ sender: Any) {
+        StarFive.backgroundColor = UIColor.blue
     }
     @IBAction func StarSixFill(_ sender: Any) {
+        StarSix.backgroundColor = UIColor.blue
     }
     
     @IBAction func PostButton(_ sender: Any) {

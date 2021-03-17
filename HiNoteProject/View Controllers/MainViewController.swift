@@ -24,5 +24,7 @@ class MainViewController: UIViewController {
     }
     @IBOutlet weak var PostView: UIScrollView!
     
-}
+    
+    }
+
 
