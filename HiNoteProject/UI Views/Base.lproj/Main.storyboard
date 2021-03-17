@@ -84,6 +84,9 @@
                                             <constraint firstAttribute="height" constant="40" id="wEy-3M-j12"/>
                                         </constraints>
                                         <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <segue destination="4Ss-cW-SYQ" kind="push" id="iKF-70-1wB"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD9-5I-PpC">
                                         <rect key="frame" x="0.0" y="213" width="300" height="20.5"/>
@@ -256,6 +259,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-91300" y="564.50892857142856"/>
+        </scene>
+        <!--Songs View Controller-->
+        <scene sceneID="5Md-bo-KSy">
+            <objects>
+                <viewController id="4Ss-cW-SYQ" customClass="SongsViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHR-YB-gd4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkm-db-Mnb">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="VwV-zW-Vvo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="RfW-12-CXg"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlV-ab-qSx">
+                                <rect key="frame" x="186" y="204" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bu9-Ly-uWq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MlV-ab-qSx" firstAttribute="top" secondItem="bu9-Ly-uWq" secondAttribute="top" constant="160" id="g2N-O4-VKQ"/>
+                            <constraint firstItem="MlV-ab-qSx" firstAttribute="centerX" secondItem="kHR-YB-gd4" secondAttribute="centerX" id="lWq-M7-iug"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EUs-Vd-s9v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBd-c3-QqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-90524" y="1225"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wDW-5X-OWt">
@@ -433,7 +470,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2tN-Vd-8ao"/>
         <segue reference="541-KF-wIb"/>
     </inferredMetricsTieBreakers>
     <resources>

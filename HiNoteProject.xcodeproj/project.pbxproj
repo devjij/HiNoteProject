@@ -31,6 +31,7 @@
 		C1C0AFBD259A2E9800ADE1CD /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFBC259A2E9800ADE1CD /* SongList.swift */; };
 		C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */; };
 		C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC6259A328200ADE1CD /* ContentView.swift */; };
+		C1E2192826022B370048A3ED /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2192726022B370048A3ED /* SongsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C1C0AFBC259A2E9800ADE1CD /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
 		C1C0AFC6259A328200ADE1CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1E2192726022B370048A3ED /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsViewController.swift; path = "HiNoteProject/UI Views/SongsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		C1263144259230D50087660C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C1E2192726022B370048A3ED /* SongsViewController.swift */,
 				C126313A259230AD0087660C /* SignUpViewController.swift */,
 				C126313F259230C50087660C /* LoginViewController.swift */,
 				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
@@ -335,6 +338,7 @@
 				8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */,
 				C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */,
 				C1068219259C0A6A00661D9D /* FavoriteButton.swift in Sources */,
+				C1E2192826022B370048A3ED /* SongsViewController.swift in Sources */,
 				C1C0AF9C259A2AA000ADE1CD /* LandmarkRow.swift in Sources */,
 				8744DD50259137BF00457EB7 /* PostViewController.swift in Sources */,
 			);
