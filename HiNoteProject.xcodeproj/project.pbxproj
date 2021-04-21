@@ -32,6 +32,7 @@
 		C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */; };
 		C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC6259A328200ADE1CD /* ContentView.swift */; };
 		C1E2192826022B370048A3ED /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2192726022B370048A3ED /* SongsViewController.swift */; };
+		C3DB6C89261F2E700093581D /* StartupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB6C88261F2E700093581D /* StartupController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
 		C1C0AFC6259A328200ADE1CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1E2192726022B370048A3ED /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsViewController.swift; path = "HiNoteProject/UI Views/SongsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		C3DB6C88261F2E700093581D /* StartupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				C1C0AF79259A268D00ADE1CD /* landmarkData.json */,
 				C1C0AF83259A272100ADE1CD /* ModelData.swift */,
 				C140908325903D6A00FD249D /* AppDelegate.swift */,
+				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
 				C140908525903D6A00FD249D /* SceneDelegate.swift */,
 				C1C0AF7E259A26BA00ADE1CD /* Landmark.swift */,
 				C1C0AF9B259A2AA000ADE1CD /* LandmarkRow.swift */,
@@ -133,9 +136,9 @@
 				C14ED2EA25EDD47F0080532C /* AddSong.swift */,
 				C1068218259C0A6A00661D9D /* FavoriteButton.swift */,
 				C1E2192726022B370048A3ED /* SongsViewController.swift */,
+				C3DB6C88261F2E700093581D /* StartupController.swift */,
 				C126313A259230AD0087660C /* SignUpViewController.swift */,
 				C126313F259230C50087660C /* LoginViewController.swift */,
-				8744DD4B2590D7D300457EB7 /* MainViewController.swift */,
 				8744DD4F259137BF00457EB7 /* PostViewController.swift */,
 				C140908725903D6A00FD249D /* ViewController.swift */,
 			);
@@ -176,8 +179,8 @@
 		C140909925903D6B00FD249D /* HiNoteProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */,
 				C140909C25903D6B00FD249D /* Info.plist */,
+				C140909A25903D6B00FD249D /* HiNoteProjectTests.swift */,
 			);
 			path = HiNoteProjectTests;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				C1C0AF7F259A26BA00ADE1CD /* Landmark.swift in Sources */,
 				C140908425903D6A00FD249D /* AppDelegate.swift in Sources */,
 				C1C0AFBD259A2E9800ADE1CD /* SongList.swift in Sources */,
+				C3DB6C89261F2E700093581D /* StartupController.swift in Sources */,
 				C14ED2EB25EDD47F0080532C /* AddSong.swift in Sources */,
 				C140908625903D6A00FD249D /* SceneDelegate.swift in Sources */,
 				8744DD4C2590D7D300457EB7 /* MainViewController.swift in Sources */,

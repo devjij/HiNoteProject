@@ -17,10 +17,11 @@ class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var LoginButton: UIButton!
-    @IBAction func ClickLoginButton(_ sender: Any) {
-        performSegue(withIdentifier: "ClickLoginButoon", sender: self)
+    
+    @IBSegueAction func ClickLoginButton(_ coder: NSCoder) -> MainViewController? {
+        return MainViewController()
     }
-
+    
     
 
 
