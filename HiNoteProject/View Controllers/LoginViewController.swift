@@ -14,15 +14,9 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    
-    @IBOutlet weak var LoginButton: UIButton!
-    
-    @IBSegueAction func ClickLoginButton(_ coder: NSCoder) -> MainViewController? {
-        return MainViewController()
-    }
-    
-    
 
+    @IBAction func SecondLogIn(_ sender: UIButton) {
+        performSegue(withIdentifier: "ShowMain", sender: self)
+    }
 
 }

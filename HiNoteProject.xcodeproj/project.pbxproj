@@ -32,6 +32,7 @@
 		C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */; };
 		C1C0AFC7259A328200ADE1CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C0AFC6259A328200ADE1CD /* ContentView.swift */; };
 		C1E2192826022B370048A3ED /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2192726022B370048A3ED /* SongsViewController.swift */; };
+		C3798E942631A38000C4EE6C /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3798E932631A38000C4EE6C /* StartScreenViewController.swift */; };
 		C3DB6C89261F2E700093581D /* StartupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB6C88261F2E700093581D /* StartupController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		C1C0AFC1259A316A00ADE1CD /* SongDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetail.swift; sourceTree = "<group>"; };
 		C1C0AFC6259A328200ADE1CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1E2192726022B370048A3ED /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongsViewController.swift; path = "HiNoteProject/UI Views/SongsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		C3798E932631A38000C4EE6C /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		C3DB6C88261F2E700093581D /* StartupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				C14ED2EA25EDD47F0080532C /* AddSong.swift */,
 				C1068218259C0A6A00661D9D /* FavoriteButton.swift */,
 				C1E2192726022B370048A3ED /* SongsViewController.swift */,
+				C3798E932631A38000C4EE6C /* StartScreenViewController.swift */,
 				C3DB6C88261F2E700093581D /* StartupController.swift */,
 				C126313A259230AD0087660C /* SignUpViewController.swift */,
 				C126313F259230C50087660C /* LoginViewController.swift */,
@@ -261,6 +264,7 @@
 				TargetAttributes = {
 					C140907F25903D6A00FD249D = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1240;
 					};
 					C140909525903D6B00FD249D = {
 						CreatedOnToolsVersion = 12.2;
@@ -331,6 +335,7 @@
 				C1263140259230C50087660C /* LoginViewController.swift in Sources */,
 				C1C0AFC2259A316A00ADE1CD /* SongDetail.swift in Sources */,
 				C126313B259230AD0087660C /* SignUpViewController.swift in Sources */,
+				C3798E942631A38000C4EE6C /* StartScreenViewController.swift in Sources */,
 				C1C0AF84259A272100ADE1CD /* ModelData.swift in Sources */,
 				C140908825903D6A00FD249D /* ViewController.swift in Sources */,
 				C1C0AF7F259A26BA00ADE1CD /* Landmark.swift in Sources */,
@@ -520,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5TSK3BW7F;
 				INFOPLIST_FILE = HiNoteProject/Info.plist;
@@ -530,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.devjij.HiNoteProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,6 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5TSK3BW7F;
 				INFOPLIST_FILE = HiNoteProject/Info.plist;

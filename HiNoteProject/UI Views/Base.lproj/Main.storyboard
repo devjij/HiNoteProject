@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Start Screen View Controller-->
         <scene sceneID="NeQ-Cq-LEQ">
             <objects>
-                <viewController id="8yk-cQ-Wv5" customClass="MainViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8yk-cQ-Wv5" customClass="StartScreenViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jBp-KP-DpF" customClass="StartupController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,9 @@
                                         <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="6c1-1N-s99" kind="show" destinationCreationSelector="LoginButton:" id="955-UK-q70"/>
+                                            <action selector="FirstLogIn:" destination="8yk-cQ-Wv5" eventType="touchUpInside" id="VHV-bm-2oE"/>
+                                            <action selector="FirstLogInButton:" destination="8yk-cQ-Wv5" eventType="touchUpInside" id="iaW-y2-s5e"/>
+                                            <segue destination="6c1-1N-s99" kind="show" identifier="ShowLogIn" destinationCreationSelector="ShowLogIn:sender:segueIdentifier:" id="Liq-g1-TWR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -51,6 +53,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uud-Ke-Tvq"/>
+                    <connections>
+                        <outlet property="FirstLogIn" destination="Onv-Zt-kaF" id="36H-xh-EoM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sA7-n5-oDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +91,8 @@
                                         <state key="normal" title="Log in"/>
                                         <connections>
                                             <action selector="LoginButton:" destination="6c1-1N-s99" eventType="touchUpInside" id="wZg-Sc-J1i"/>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" destinationCreationSelector="ClickLoginButton:" id="tqe-gb-Pyh"/>
+                                            <action selector="SecondLogIn:" destination="6c1-1N-s99" eventType="touchUpInside" id="KKY-74-CiE"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="ShowMain" id="RxY-67-AHw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD9-5I-PpC">
@@ -118,6 +124,7 @@
                     <navigationItem key="navigationItem" id="cms-bn-dVk"/>
                     <connections>
                         <outlet property="LoginButton" destination="O9m-qb-q5z" id="Vcq-ln-Pub"/>
+                        <outlet property="SecondLogIn" destination="zGA-VU-orn" id="wiy-hx-QG1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNg-6n-5Cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,7 +203,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-Kx-fWx">
@@ -265,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91300" y="564.50892857142856"/>
+            <point key="canvasLocation" x="-91341" y="565"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wDW-5X-OWt">
@@ -280,7 +287,7 @@
             <objects>
                 <viewController id="RIE-B0-b7B" customClass="PostViewController" customModule="HiNoteProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLl-Uf-b6N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Song" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-6K-V4z">
@@ -448,7 +455,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tqe-gb-Pyh"/>
+        <segue reference="RxY-67-AHw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>

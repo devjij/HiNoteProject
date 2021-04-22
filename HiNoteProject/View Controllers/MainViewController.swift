@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     
     @IBAction func Settings(_ sender: UIButton) {
     }
-    @IBOutlet weak var PostView: UIScrollView!
+//    @IBOutlet weak var PostView: UIScrollView!
 
     @IBOutlet weak var MainView: UIView!
     //    var Postview: UIScrollView = {}
